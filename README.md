@@ -13,4 +13,4 @@ brew install --cask tunnel-mate
 
 ## How to Update
 
-This Cask formula is **automatically updated** by the `tunnel-mate` GitHub Actions workflow whenever a new version tag is pushed. No manual updates are required.
+This Cask formula is **automatically updated** by the `tunnel-mate` GitHub Actions workflow whenever a new version tag is pushed.
