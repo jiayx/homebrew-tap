@@ -1,14 +1,14 @@
 cask "tunnel-mate" do
-  version "0.1.0"
+  version "0.2.4"
 
   on_intel do
     # 待填入 Intel 版本 dmg 的 SHA256 值 (可运行 `shasum -a 256 <filename>` 获取)
-    sha256 "PLACEHOLDER_INTEL_SHA256"
+    sha256 "4f25106d6091f4928cc645cd2ba5c569b07189a951a75c2e8b4d5310951ff54c"
     url "https://github.com/jiayx/tunnel-mate/releases/download/v#{version}/Tunnel.Mate_#{version}_macos_x64.dmg"
   end
   on_arm do
     # 待填入 Apple Silicon (M1/M2/M3) 版本 dmg 的 SHA256 值
-    sha256 "PLACEHOLDER_ARM64_SHA256"
+    sha256 "806f15e16b1a639a4f773236ed5ec06173d6a1ce3b6bb13b97f5f03dc6af5d0e"
     url "https://github.com/jiayx/tunnel-mate/releases/download/v#{version}/Tunnel.Mate_#{version}_macos_aarch64.dmg"
   end
 
