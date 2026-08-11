@@ -1,13 +1,13 @@
 cask "tunnel-mate" do
-  version "0.5.1"
+  version "0.5.2"
 
   on_arm do
-    sha256 "eeb7ebe376d1192a53a2dc1a170287e81ef4fdde7e0b4d770f422794bed23a92"
+    sha256 "1fd445f18f8f0c9d2e38c1ea83a8c92719373d1865a502db685e0d00840e093d"
 
     url "https://github.com/jiayx/tunnel-mate/releases/download/v#{version}/tunnel-mate-#{version}-macos-aarch64.dmg"
   end
   on_intel do
-    sha256 "c229483494f5f1b82f37c2f5854dc053e4cf09d07eb5434cb9e6cc0f593f1f41"
+    sha256 "8c9402d558c5606d6f0e8b0fed38635d471155843f71b36472161150f36d56c7"
 
     url "https://github.com/jiayx/tunnel-mate/releases/download/v#{version}/tunnel-mate-#{version}-macos-x86_64.dmg"
   end
