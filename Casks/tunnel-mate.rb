@@ -1,22 +1,24 @@
 cask "tunnel-mate" do
   version "0.5.0"
 
-  on_intel do
-    # 待填入 Intel 版本 dmg 的 SHA256 值 (可运行 `shasum -a 256 <filename>` 获取)
-    sha256 "67fe2989039651308054c12636a3207b11bc6fee302655f5c5c857bf938703a7"
-    url "https://github.com/jiayx/tunnel-mate/releases/download/v#{version}/tunnel-mate-#{version}-macos-x86_64.dmg"
-  end
   on_arm do
-    # 待填入 Apple Silicon (M1/M2/M3) 版本 dmg 的 SHA256 值
     sha256 "a1d15d9b84b3b8838f9005d3fc8e40203bf6e359337ebdf417340a950829e5c1"
+
     url "https://github.com/jiayx/tunnel-mate/releases/download/v#{version}/tunnel-mate-#{version}-macos-aarch64.dmg"
+  end
+  on_intel do
+    sha256 "67fe2989039651308054c12636a3207b11bc6fee302655f5c5c857bf938703a7"
+
+    url "https://github.com/jiayx/tunnel-mate/releases/download/v#{version}/tunnel-mate-#{version}-macos-x86_64.dmg"
   end
 
   name "Tunnel Mate"
-  desc "A cross-platform GUI for managing SSH tunnels"
+  desc "Cross-platform GUI for managing SSH tunnels"
   homepage "https://github.com/jiayx/tunnel-mate"
 
-    app "Tunnel Mate.app"
+  depends_on :macos
+
+  app "Tunnel Mate.app"
 
   zap trash: [
     "~/Library/Application Support/com.jiayx.tunnel-mate",
